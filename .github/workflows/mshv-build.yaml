@@ -36,7 +36,7 @@ jobs:
          - 'cargo build --package vhost_user_block'
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: AZ Login
         run: az login --identity --client-id ${{ secrets.MSHV_MI_CLIENT_ID }}
